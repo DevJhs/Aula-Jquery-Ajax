@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="Jquery.js"></script>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Aula-de-Jquery e Ajax</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white">Consulta Cep</a>
+          <div class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="CEP" id="cep">
+            <button class="btn btn-outline-success" onclick="consultacep()">Buscar</button>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="container barra" style="margin-top: 100px;">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+         </div> 
+      </div>
+     
+
+      <div class="container" style="margin-top:20px;">
+          <div class="row">
+              <h3 id="Ce">CEP</h3>
+          </div>
+          <div class="row">
+              <table class="table" style="margin-top: 20px;">
+                  <tbody>
+                      <tr>
+                          <td id="Cp">CEP:</td>
+                          <td id="Lg">Logradouro:</td>
+                          <td id="Cl">Complemento:</td>   
+                    </tr>
+                    <tr>
+                                            
+                          <td id="Br">Bairro:</td> 
+                          <td id="Lc">Localidade:</td>   
+                          <td  id="Uf">UF:</td>         
+                    </tr>
+                    <tr>
+                        <td id="Ig">IBGE:</td>
+                        <td id="Ga">GIA:</td>
+                        <td id="DDD">DDD:</td>                      
+                    </tr>
+                    <tr>
+                        <td id="Sf">SIAFI:</td> 
+                    </tr>
+
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+    <p id="info"></p>
+</body>
+</html>
